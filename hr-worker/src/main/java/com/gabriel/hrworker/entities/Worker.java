@@ -14,7 +14,7 @@ public class Worker implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	private String name;
 	private Double dailyIncome;
 	
@@ -22,18 +22,18 @@ public class Worker implements Serializable {
 		
 	}
 
-	public Worker(Integer id, String name, Double dailyIncome) {
+	public Worker(Long id, String name, Double dailyIncome) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.dailyIncome = dailyIncome;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
